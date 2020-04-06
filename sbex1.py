@@ -4,6 +4,8 @@ from stable_baselines.common.policies import MlpPolicy
 from stable_baselines.common.vec_env import DummyVecEnv
 from stable_baselines import PPO2
 
+# 還是不行 import tensorflow.contrib.layers as tf_layers No module named 'tensorflow.contrib'
+
 env = gym.make('CartPole-v1')
 # Optional: PPO2 requires a vectorized environment to run
 # the env is now wrapped automatically when passing it to the constructor
